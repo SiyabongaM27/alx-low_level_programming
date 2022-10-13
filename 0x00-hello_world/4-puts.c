@@ -2,6 +2,8 @@
 
 int main(void)
 {
-    printf("Programming is like building a multilingual puzzle");
-    return(0);
+char myStr[] = "\"Programming is like building a multilingual puzzle";
+
+puts(myStr);
+return (0);
 }
