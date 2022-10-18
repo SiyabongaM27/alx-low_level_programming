@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main print out the alphabet
+ * print_alphabet - print out the alphabet
  *
- * Return: Always 0 (Success)
+ * Void
  */
 
 void print_alphabet(void)
@@ -12,9 +12,10 @@ void print_alphabet(void)
 char c;
 
 c = 'a';
-while(c <= 'z')
+while (c <= 'z')
 {
 _putchar(c);
+c++;
 }
 
 _putchar('\n');
