@@ -5,6 +5,8 @@
 /**
  * _islower - checks for lower case characters
  *
+ * @c: The integer value it recieves
+ *
  * Return: 1 if lowercase and 0 otherwise
  */
 
@@ -15,9 +17,9 @@ if (c <= 122 && c >= 97)
 {
 return (1);
 }
-else 
+else
 {
-return 0;
+return (0);
 }
 
 }
