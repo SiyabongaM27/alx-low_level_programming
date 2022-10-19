@@ -15,9 +15,11 @@ int hours, minutes;
 
 hours = 24;
 minutes = 59;
-for (int i = 0; i < hours; i++)
+int i;
+for (i = 0; i < hours; i++)
 {
-for (int j = 0; j < minutes; j++)
+int j;
+for (j = 0; j < minutes; j++)
 {
 _putchar((i / 10) + '0');
 _putchar((i % 10) + '0');
