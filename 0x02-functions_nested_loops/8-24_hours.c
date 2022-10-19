@@ -11,11 +11,10 @@
 
 void jack_bauer(void)
 {
-int hours, minutes;
+int hours, minutes, i;
 
 hours = 24;
 minutes = 59;
-int i;
 for (i = 0; i < hours; i++)
 {
 int j;
