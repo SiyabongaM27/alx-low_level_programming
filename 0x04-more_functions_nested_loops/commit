@@ -1,0 +1,22 @@
+#!/bin/bash
+echo 'Enter file name:'
+
+read fileName
+
+if [ -e $fileName ]; then 
+
+	chmod 755 $fileName
+
+	git add .
+
+	echo 'Enter the commit message:'
+
+	read commitMessage
+
+	git commit -m "$commitMessage"
+
+	git push
+
+else 
+	echo 'File does not exists'
+fi
