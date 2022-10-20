@@ -17,9 +17,9 @@ num = 0;
 while (num < 10)
 {
 if (num != 2 && num != 4)
-putchar(num + '0');
+_putchar(num + '0');
 num++;
 continue;
 }
-putchar('\n');
+_putchar('\n');
 }
