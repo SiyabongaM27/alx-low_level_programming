@@ -4,37 +4,32 @@
 /**
  * print_triangle - print a triangle
  *
- * @size - integer parsed
+ * @size: integer parsed
  *
  * Return: void
  */
 
 void print_triangle(int size)
 {
-if (size > 0)
-{
-int i;
-for (i = 1; i <= size; i++)
-{
-   int j;
-   for (j = 1; j <= i; j++)
-   {
-       putchar('#');
-   }
-   putchar('\n'); 
-}
-}
-else
+int i, j;
+
+if (size <= 0)
 {
 putchar('\n');
 }
-}
-
-int main(void)
+for (i = 1; i <= size; i++)
 {
-    print_triangle(2);
-    print_triangle(10);
-    print_triangle(1);
-    print_triangle(0);
-    return (0);
+for (j = 1; j <= size; j++)
+{
+if (j <= (size - i))
+{
+putchar(' ');
+}
+else
+{
+putchar('#');
+}
+}
+putchar('\n');
+}
 }
