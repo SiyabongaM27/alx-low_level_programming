@@ -1,4 +1,5 @@
-#include <stdio.h>
+#inlude <stdio.h>
+include "main.h"
 
 /**
 * main - causes an infinite loop
@@ -14,7 +15,7 @@ printf("Infinite loop incoming :(\n");
 i = 0;
 /**
 * while (i < 10) - comment
-* { @\\o/\n": description
+* {
 * putchar(i);
 * }
 */
