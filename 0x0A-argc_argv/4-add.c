@@ -3,37 +3,32 @@
 #include <ctype.h>
 
 /**
- * main - entry point
- *
- * @argc: counter
- * @argv: arguments
- *
- * Return: 0 otherwise 1
- */
+* main - adds numbers
+* @argc: number of arguments passed to the function
+* @argv: argument vector of pointers to strings
+*
+* Return: 0 if no errors, else 1
+*/
 
 int main(int argc, char *argv[])
 {
-int i;
-int result;
+int a = 0, i, j;
 
-if (argc == 0)
+for (i = 1; i < argc; i++)
 {
-printf("0\n");
-}
-
-for (i = 1; i < argc - 1; i++)
+for (j = 0; argv[i][j]; j++)
 {
-if (atoi(argv[i]) % 10)
+if (isdigit(argv[i][j]) == 0)
 {
-result += atoi(argv[i]);
+puts("Error");
+return (1);
 }
-else
+}
+}
+for (i = 1; i < argc; i++)
 {
-printf("Error\n");
-return (0);
+a += atoi(argv[i]);
 }
-printf("%d\n", result);
-}
-
+printf("%d\n", a);
 return (0);
 }
