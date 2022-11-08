@@ -25,7 +25,10 @@ return ('\0');
 p = malloc(sizeof(int *) * height);
 
 if (p == NULL)
+{
+free(p);
 return ('\0');
+}
 
 for (i = 0; i < height; i++)
 {
@@ -33,4 +36,5 @@ p[i] = malloc(sizeof(int) * width);
 }
 
 return (p);
+free(p);
 }
