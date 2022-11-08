@@ -18,22 +18,21 @@ unsigned int i;
 
 if (size == 0)
 {
-return (NULL);
+return ('\0');
 }
 
 p = malloc(sizeof(char) * size);
-
-for (i = 0; i <= size; i++)
-p[i] = c;
 
 if (p == NULL)
 {
 return ('\0');
 }
-else
-{
-return (p);
-}
 
+for (i = 0; i <= size; i++)
+p[i] = c;
+
+p[size] = '\0';
+
+return (p);
 free(p);
 }
