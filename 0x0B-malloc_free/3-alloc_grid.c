@@ -33,6 +33,11 @@ return ('\0');
 for (i = 0; i < height; i++)
 {
 p[i] = malloc(sizeof(int) * width);
+if (p[i] == NULL)
+{
+free(p);
+return ('\0');
+}
 }
 
 return (p);
