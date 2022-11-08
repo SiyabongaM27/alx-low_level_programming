@@ -24,13 +24,13 @@ return ('\0');
 
 p = malloc(sizeof(int *) * height);
 
-if (p == NULL)
-return ('\0');
-
 for (i = 0; i < height; i++)
 {
 p[i] = malloc(sizeof(int) * width);
 }
+
+if (p == NULL)
+return ('\0');
 
 return (p);
 free(p);
