@@ -28,7 +28,7 @@ p[i] = c;
 
 if (p == NULL)
 {
-return (NULL);
+return ('\0');
 }
 else
 {
