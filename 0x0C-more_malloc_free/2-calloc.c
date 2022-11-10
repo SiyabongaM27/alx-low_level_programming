@@ -14,6 +14,7 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+unsigned int i;
 char *p;
 
 /* return null if parameters are 0 */
@@ -23,7 +24,7 @@ return ('\0');
 }
 
 /* allocate memory for an array of size (size) and length of (nmemb) */
-p = malloc(sizeof(size) * nmemb);
+p = malloc(size * nmemb);
 
 /* return null if malloc fails */
 if (p == NULL)
