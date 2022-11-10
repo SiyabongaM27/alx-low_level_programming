@@ -31,5 +31,5 @@ if (p == NULL)
 return ('\0');
 }
 
-return (p);
+return ((void *)p);
 }
