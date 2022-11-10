@@ -31,5 +31,9 @@ if (p == NULL)
 return ('\0');
 }
 
+/* set memory to 0 */
+for (i = 0; i < nmemb * size; i++)
+p[i] = 0;
+
 return ((void *)p);
 }
